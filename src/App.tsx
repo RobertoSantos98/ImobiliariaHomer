@@ -1,5 +1,6 @@
 import { Header } from './components/layouts/Header';
 import { Hero } from './components/sections/Hero';
+import { SobreNos } from './components/sections/SobreNos';
 import { PropertyCard } from './components/ui/PropertyCards';
 import { Building2, Search } from 'lucide-react';
 
@@ -45,6 +46,8 @@ function App() {
       <Header/>
 
       <Hero/>
+
+      <SobreNos/>
    </div>
   );
 }
