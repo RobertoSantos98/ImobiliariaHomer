@@ -1,5 +1,6 @@
 import { Header } from './components/layouts/Header';
 import { Hero } from './components/sections/Hero';
+import Recomendados from './components/sections/Recomendados';
 import { SobreNos } from './components/sections/SobreNos';
 import { PropertyCard } from './components/ui/PropertyCards';
 import { Building2, Search } from 'lucide-react';
@@ -48,6 +49,8 @@ function App() {
       <Hero/>
 
       <SobreNos/>
+
+      <Recomendados/>
    </div>
   );
 }

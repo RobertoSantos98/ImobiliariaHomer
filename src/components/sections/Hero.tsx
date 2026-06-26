@@ -1,4 +1,4 @@
-import { Building2, ChevronRight, Eye, Trophy, BanknoteArrowUp, Laugh } from "lucide-react"
+import { Building2, ChevronRight, Eye, Trophy, BanknoteArrowUp, Laugh, User } from "lucide-react"
 import { cn } from "../../utils/cn"
 
 export function Hero() {
@@ -9,26 +9,33 @@ export function Hero() {
     { icon: Laugh, value: "98%", label: "Clientes Satisfeitos" },
   ]
 
+  const avaliacoes = [
+    { name: "Teste" },
+    { name: "Ricardo" },
+    { name: "Wesley" },
+    { name: "Anderson" },
+  ];
+
   return (
     <section className={cn("relative overflow-hidden min-h-[calc(100dvh-64px)] flex items-center")}>
-      
+
       {/* 1. BACKGROUND & OVERLAY */}
       <div className="absolute inset-0 bg-slate-900">
-        <img 
-          className="w-full h-full object-cover opacity-90 md:opacity-100" 
-          src="https://png.pngtree.com/thumb_back/fw800/background/20251130/pngtree-futuristic-circular-eco-house-with-solar-panels-on-grassy-hill-overlooking-image_20655102.webp" 
-          alt="Casa ecológica futurista sustentável" 
+        <img
+          className="w-full h-full object-cover opacity-90 md:opacity-100"
+          src="https://png.pngtree.com/thumb_back/fw800/background/20251130/pngtree-futuristic-circular-eco-house-with-solar-panels-on-grassy-hill-overlooking-image_20655102.webp"
+          alt="Casa ecológica futurista sustentável"
         />
         {/* Gradiente adaptativo: Transiciona verticalmente no mobile e horizontalmente no desktop */}
         <div className="absolute inset-0 z-10 bg-linear-to-b from-yellow-50/95 via-yellow-50/80 to-transparent md:bg-linear-to-r md:from-yellow-50 md:via-yellow-50/90 md:via-50% md:to-transparent" />
       </div>
 
       {/* 2. CONTEÚDO PRINCIPAL (GRID RESPONSIVO) */}
-      <div className="max-w-7xl mx-auto w-full h-full grid grid-cols-1 lg:grid-cols-2 items-center gap-12 px-6 py-12 md:py-20 z-20 relative">
-        
+      <div className="max-w-7xl mx-auto w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 py-12 md:py-2 z-20 relative">
+
         {/* COLUNA ESQUERDA: TEXTOS E CTAs */}
         <div className="flex flex-col gap-6 items-start max-w-2xl">
-          
+
           {/* Badge */}
           <div className="inline-flex bg-emerald-900/10 text-emerald-900 font-bold text-xs md:text-sm items-center gap-2 rounded-xl px-4 py-2 border border-emerald-900/10">
             <Building2 className="h-4 w-4 text-emerald-900" />
@@ -65,6 +72,37 @@ export function Hero() {
               Assista Agora
             </button>
           </div>
+
+          {/* Seção de Avaliações / Social Proof */}
+          <div className="flex flex-col gap-2 items-start mt-2">
+            <span className="text-xs text-emerald-900/60 font-black tracking-widest uppercase pl-1">
+              Avaliações
+            </span>
+
+            <div className="flex items-center gap-4">
+              {/* O container pai agora gerencia o empilhamento negativo com '-space-x-3' */}
+              <div className="flex -space-x-3 items-center">
+                {avaliacoes.map((pessoa, index) => (
+                  <div
+                    key={index} // 1. FIX: Adicionada a propriedade key obrigatória
+                    title={pessoa.name} // Acessibilidade: mostra o nome ao passar o mouse
+                    className="h-10 w-10 bg-white/90 backdrop-blur-xs flex items-center justify-center rounded-full border-2 border-yellow-100 shadow-md shadow-emerald-950/5 shrink-0 transition-transform hover:scale-110 hover:z-30 cursor-pointer"
+                  >
+                    <User className="w-5 h-5 text-emerald-900/80" />
+                  </div>
+                ))}
+              </div>
+
+              {/* Texto de suporte alinhado */}
+              <div className="flex flex-col text-emerald-900 leading-none">
+                <span className="text-xl font-black tracking-tight">50+</span>
+                <span className="text-[10px] font-bold text-emerald-900/50 uppercase tracking-wider mt-0.5">
+                  Clientes Felizes
+                </span>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* COLUNA DIREITA: CARD DE ESTATÍSTICAS */}

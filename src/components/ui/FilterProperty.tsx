@@ -19,7 +19,7 @@ export function FilterProperty() {
     /* Alterado para <form> para permitir o envio ao apertar "Enter" */
     <form 
       onSubmit={handleSearch}
-      className="bg-white/95 backdrop-blur-md border border-emerald-900/10 p-4 lg:p-6 w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-5 lg:gap-2 items-stretch lg:items-center rounded-3xl shadow-xl shadow-emerald-950/5 relative -mt-10 lg:-mt-14 z-40"
+      className="bg-white/95 backdrop-blur-md border border-emerald-900/10 p-4 lg:p-6 w-full max-w-6xl mx-auto flex flex-col lg:flex-row gap-5 lg:gap-2 items-stretch lg:items-center rounded-3xl shadow-xl shadow-emerald-950/5 relative -mt-10 lg:-mt-8 md:-mt-4 z-40"
     >
       
       {/* CAMPO 1: LOCALIZAÇÃO */}
