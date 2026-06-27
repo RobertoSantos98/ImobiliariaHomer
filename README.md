@@ -60,7 +60,7 @@ src/
 Certifique-se de ter o **Node.js** instalado em sua máquina antes de prosseguir.
 
 1. Clone o repositório:
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/RobertoSantos98/ImobiliariaHomer.git
 
 2. Entre no diretório do projeto:
    cd nome-do-repositorio
