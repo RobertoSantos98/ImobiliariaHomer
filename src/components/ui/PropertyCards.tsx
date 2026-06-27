@@ -46,15 +46,15 @@ export function PropertyCard({ image, title, location, price, beds, baths, area,
         {/* Detalhes Técnicos */}
         <div className="flex items-center justify-between text-slate-600 text-sm">
           <div className="flex items-center gap-1.5">
-            <BedDouble className="w-4 h-4 text-indigo-500" />
+            <BedDouble className="w-4 h-4 text-emerald-500" />
             <span>{beds} Quartos</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <Bath className="w-4 h-4 text-indigo-500" />
+            <Bath className="w-4 h-4 text-emerald-500" />
             <span>{baths} Banh.</span>
           </div>
           <div className="flex items-center gap-1.5">
-            <Maximize className="w-4 h-4 text-indigo-500" />
+            <Maximize className="w-4 h-4 text-emerald-500" />
             <span>{area} m²</span>
           </div>
         </div>

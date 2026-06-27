@@ -1,4 +1,6 @@
 import { Header } from './components/layouts/Header';
+import { Agentes } from './components/sections/Agentes';
+import Footer from './components/sections/Footer';
 import { Hero } from './components/sections/Hero';
 import Recomendados from './components/sections/Recomendados';
 import { SobreNos } from './components/sections/SobreNos';
@@ -51,6 +53,10 @@ function App() {
       <SobreNos/>
 
       <Recomendados/>
+
+      <Agentes/>
+
+      <Footer/>
    </div>
   );
 }

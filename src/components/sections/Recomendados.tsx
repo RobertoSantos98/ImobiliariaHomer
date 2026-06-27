@@ -16,7 +16,7 @@ export default function Recomendados() {
     },
     { 
       id: "2", 
-      image: "https://axvliw1bcpyx.objectstorage.sa-vinhedo-1.oci.customer-oci.com/n/axvliw1bcpyx/b/ksi/o/867/foto_/2024/10983/ribeirao-preto-casa-condominio-portal-da-mata-17-01-2024_10-21-25-0.webp", 
+      image: "https://axvliw1bcpyx.objectstorage.sa-vinhedo-1.oci.customer-oci.com/n/axvliw1bcpyx/b/ksi/o/991/foto_/2022/11178/sao-jose-dos-campos-casa-condominio-condominio-residencial-alphaville-ii-23-05-2024_14-27-13-16.webp", 
       title: "Casa em Local Planejado", 
       location: "Condomínio Portal da Mata, Ribeirão Preto - SP", 
       price: "R$ 400.000", 
